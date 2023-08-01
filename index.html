@@ -18,20 +18,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+   
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
- 
   <body>
     <main>
         
       <!-- review section -->
 
-      <section class="review-section">
-        <div class="container">
+      <section class="review-section" id="review">
+        <div class="container slider">
           <div class="review-text-blk">
             <h3 class="review-h">
               <span class="review-span">Yacht Adventures </span>take pride in providing the best
@@ -42,17 +41,22 @@
               for it - read on to find out what they have to say about their journey with us.
             </p>
           </div>
+        
+          <!--<img class="customer-icon" src="/yacht-adventures-team-project/assets/image1_mobile-5289ee93.png" 
+          alt="John Wax" srcset="/yacht-adventures-team-project/assets/image1_mobile-5289ee93.png 1x, 
+          /yacht-adventures-team-project/assets/image1_mobile@2x-ef9c3c73.png 2x"> -->
           
-
           <!-- review card list -->
+          <div class="slider-wrapper" id="sliderWrapper">
+          <div class="swiper-container">
           <ul class="review-card-list">
             <li class="review-card-item">
               <img 
                 class="rev-photo"
-                srcset="./img/review/photo01@1x.jpg 1x, ./img/review/photo01@2x.jpg 2x"
-                src="./img/review/photo01@2x.jpg"
+                srcset="./img/review/img1-desk.png 1x, ./img/review/img1-desk@2x.png 2x"
+                src="./img/review/img1-desk.png"
                 alt="photo of John Wax"
-                width="48" height="48"
+                width="56" height="56"
               />
               <h4 class="rev-name">John Wax</h4>
               <p class="rev-text">I rented the Lagoon 620 with my family for a week-long vacation and 
@@ -63,24 +67,24 @@
             <li class="review-card-item">
               <img 
                 class="rev-photo"
-                srcset="./img/review/photo02@1x.jpg 1x, ./img/review/photo02@2x.jpg 2x"
-                src="./img/review/photo02@2x.jpg"
+                srcset="./img/review/img2-desk.png 1x, ./img/review/img2-desk@2x.png 2x"
+                src="./img/review/img2-desk.png"
                 alt="photo of Victoria Romashenko"
-                width="48" height="48"
+                width="56" height="56"
               />
               <h4 class="rev-name">Victoria Romashenko</h4>
               <p class="rev-text">The Sunseeker Manhattan 66 was the perfect choice for our romantic getaway. 
                 The yacht was beautifully designed, with all
-              the amenities we needed, and the crew was attentive and friendly. </p>
+                the amenities we needed, and the crew was attentive and friendly. </p>
             </li>
             
             <li class="review-card-item">
               <img 
                 class="rev-photo"
-                srcset="./img/review/photo03@1x.jpg 1x, ./img/review/photo03@2x.jpg 2x"
-                src="./img/review/photo03@2x.jpg"
+                srcset="./img/review/img3-desk.png 1x, ./img/review/img3-desk@2x.png 2x"
+                src="./img/review/img3-desk.png"
                 alt="photo of Ihor Trachuk"
-                width="48" height="48"
+                width="56" height="56"
               />
               <h4 class="rev-name">Ihor Trachuk</h4>
               <p class="rev-text">The Azimut 80 was the most luxurious yacht I've ever been on. 
@@ -89,10 +93,12 @@
             </li>
           </ul>
           <div class="indicator">
-            <span class="point active"></span>
+            <span class="point"></span>
             <span class="point"></span>
             <span class="point"></span>
           </div>
+          </div>
+          
         </div>
       </section>
     </main>
@@ -109,5 +115,7 @@
         </a>
       </div>
     </div>
+
+
 
 <script src="./js/review-slider.js"></script>
